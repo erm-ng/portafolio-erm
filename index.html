@@ -329,7 +329,7 @@
           <!-- Email -->
           <div class="mb-3">
             <label class="form-label text-white">Correo</label>
-            <input type="email" name="email" class="form-control" placeholder="tu@email.com" required>
+            <input type="email" name="correo" class="form-control" placeholder="tu@email.com" required>
           </div>
 
           <!-- Mensaje -->
@@ -419,30 +419,44 @@
 
 
 
-<script src="main.js"></script>
 <!-- EmailJS -->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <script>
-(function(){
-  emailjs.init("ns41-5nQ0AiTJyvwF");
+(function () {
+  emailjs.init("ns41-5nQ0AiTJyvwF"); // tu PUBLIC KEY
 })();
 
-document.querySelector("form").addEventListener("submit", function(e) {
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function (e) {
   e.preventDefault();
 
+  // Obtener valores
+  const nombre = form["nombre"].value;
+  const correo = form["correo"].value;
+  const mensaje = form["mensaje"].value;
+
+  // Validación básica
+  if (!nombre || !correo || !mensaje) {
+    alert("Por favor completa todos los campos");
+    return;
+  }
+
+  // Enviar con EmailJS
   emailjs.send("service_0rzpovt", "template_uobh8wc", {
-    name: this.nombre.value,
-    email: this.email.value,
-    message: this.mensaje.value
+    name: nombre,
+    email: correo,
+    message: mensaje,
+    time: new Date().toLocaleString()
   })
   .then(() => {
     alert("Mensaje enviado correctamente ✅ 🚀");
-    this.reset();
+    form.reset();
   })
   .catch((error) => {
-    console.log(error); // 👈 MUY IMPORTANTE
-    alert("Error al enviar");
+    console.error("ERROR:", error);
+    alert(error.text || "Error al enviar ❌");
   });
 });
 </script>
