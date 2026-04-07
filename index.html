@@ -320,23 +320,23 @@
 
         <form class="p-4 shadow glass-card">
 
-          <!-- Nombre -->
-          <div class="mb-3">
-            <label class="form-label text-white">Nombre</label>
-            <input type="text" name="nombre" class="form-control" placeholder="Tu nombre" required>
-          </div>
+        <!-- Nombre -->
+        <div class="mb-3">
+          <label class="form-label text-white">Nombre</label>
+          <input type="text" id="name" name="nombre" class="form-control" placeholder="Tu nombre" required>
+        </div>
 
-          <!-- Email -->
-          <div class="mb-3">
-            <label class="form-label text-white">Correo</label>
-            <input type="email" name="correo" class="form-control" placeholder="tu@email.com" required>
-          </div>
+        <!-- Email -->
+        <div class="mb-3">
+          <label class="form-label text-white">Correo</label>
+          <input type="email" id="email" name="correo" class="form-control" placeholder="tu@email.com" required>
+        </div>
 
-          <!-- Mensaje -->
-          <div class="mb-3">
-            <label class="form-label text-white">Mensaje</label>
-            <textarea name="mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
-          </div>
+        <!-- Mensaje -->
+        <div class="mb-3">
+          <label class="form-label text-white">Mensaje</label>
+          <textarea id="message" name="mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+        </div>
 
           <!-- Botón -->
           <div class="d-grid">
@@ -423,41 +423,41 @@
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <script>
-(function () {
-  emailjs.init("ns41-5nQ0AiTJyvwF"); // tu PUBLIC KEY
-})();
+document.addEventListener("DOMContentLoaded", function () {
 
-const form = document.querySelector("form");
+  emailjs.init("ns41-5nQ0AiTJyvwF");
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
+  const form = document.querySelector("form");
 
-  // Obtener valores
-  const nombre = form["nombre"].value;
-  const correo = form["correo"].value;
-  const mensaje = form["mensaje"].value;
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  // Validación básica
-  if (!nombre || !correo || !mensaje) {
-    alert("Por favor completa todos los campos");
-    return;
-  }
+    const nombre = form["nombre"].value;
+    const correo = form["correo"].value;
+    const mensaje = form["mensaje"].value;
 
-  // Enviar con EmailJS
-  emailjs.send("service_0rzpovt", "template_uobh8wc", {
-    name: nombre,
-    email: correo,
-    message: mensaje,
-    time: new Date().toLocaleString()
-  })
-  .then(() => {
-    alert("Mensaje enviado correctamente ✅ 🚀");
-    form.reset();
-  })
-  .catch((error) => {
-    console.error("ERROR:", error);
-    alert(error.text || "Error al enviar ❌");
+    if (!nombre || !correo || !mensaje) {
+      alert("Por favor completa todos los campos");
+      return;
+    }
+
+    emailjs.send("service_0rzpovt", "template_uobh8wc", {
+      name: nombre,
+      email: correo,
+      message: mensaje,
+      time: new Date().toLocaleString()
+    })
+    .then(() => {
+      alert("Mensaje enviado correctamente ✅ 🚀");
+      form.reset();
+    })
+    .catch((error) => {
+      console.error("ERROR:", error);
+      alert(error.text || "Error al enviar ❌");
+    });
+
   });
+
 });
 </script>
 
