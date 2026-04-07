@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+<link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+<link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+  <title>Portafolio - Enrique RM</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+  <button id="musicBtn">
+  <i class="bi bi-music-note-beamed"></i>
+</button>
+  <audio id="bg-music" loop>
+    <source src="assets/audio/music.mp3" type="audio/mpeg">
+  </audio> 
+  
+<aside class="sidebar">
+  <nav>
+    <a href="#inicio" class="nav-link"><i class="bi bi-house"></i><span>Inicio</span></a>
+     <a href="#about" class="nav-link"><i class="bi bi-person"></i><span>Sobre mí</span></a>
+    <a href="#skills" class="nav-link"><i class="bi bi-lightning"></i><span>Habilidades</span></a>
+    <a href="#portafolio" class="nav-link"><i class="bi bi-grid"></i><span>Portafolio</span></a>
+    <a href="#contacto" class="nav-link"><i class="bi bi-envelope"></i><span>Coctacto</span></a>
+  </nav>
+</aside>
+
+  <!-- HERO -->
+<section class="hero"  id="inicio">
+  <div class="hero-inner">
+    <div class="glitch-image">
+      <img src="assets/img/foto-central.png" alt="Central">
+      <img src="assets/img/foto-central.png" alt="Central">
+      <img src="assets/img/foto-central.png" alt="Central">
+    </div>
+    <div class="building left"></div>
+    <div class="building right"></div>
+          <h1 class="title">ENRIQUE RM</h1>
+  </div>
+
+   <!-- Contenedor de estrellas -->
+  <!-- Clase css -->
+   <div class="hero black"></div>
+  <!-- Capas de estrellas generadas por JS -->
+  <div class="star-layers" id="star-layers"></div>
+</section>
+
+  
+ <!-- SOBRE MI -->
+<section class="section"  id="about">
+  <div class="container">
+
+    <h2 class="text-center titleTwo">SOBRE MÍ</h2>
+
+    <!-- DOS COLUMNAS -->
+    <div class="row justify-text text-start">
+
+      <!-- Columna 1 -->
+      <div class="col-md-6 mb-4">
+        <p>
+          Soy <strong>desarrollador Full Stack</strong> enfocado en crear experiencias web <em>modernas, interactivas y de alto rendimiento</em>. Me especializo en el desarrollo de <strong>interfaces dinámicas</strong>, animaciones avanzadas y <strong>arquitectura de software escalable</strong>, combinando diseño, programación y tecnología para construir productos digitales que no solo funcionan, sino que destacan.
+        </p>
+
+        <p>
+          Tengo un fuerte interés en el desarrollo de <strong>videojuegos</strong>, así como en el diseño <strong>UX/UI</strong>, lo que me permite entender no solo cómo construir aplicaciones, sino también <em>cómo se sienten y cómo interactúan los usuarios</em>. Busco crear experiencias intuitivas, atractivas y fluidas, donde cada detalle tenga un propósito.
+        </p>
+      </div>
+
+      <!-- Columna 2 -->
+      <div class="col-md-6 mb-4">
+        <p>
+          Trabajo con tecnologías actuales tanto en <strong>frontend</strong> como en <strong>backend</strong>, integrando APIs, optimizando rendimiento y cuidando cada aspecto de la experiencia de usuario. Me apasiona la intersección entre <em>desarrollo web, animación e inteligencia artificial</em>, explorando constantemente nuevas formas de innovar.
+        </p>
+
+        <p>
+          Disfruto convertir ideas en <strong>experiencias visuales impactantes</strong>, con un enfoque en creatividad, eficiencia y calidad. Siempre estoy aprendiendo, experimentando y perfeccionando mis habilidades para llevar cada proyecto a un nivel superior. Actualmente busco colaborar en proyectos innovadores donde pueda <em>aportar valor y generar impacto real</em>.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="marquee py-0">
+  <div class="track">
+    <img src="assets/img/cinta.png" alt="">
+    <img src="assets/img/cinta.png" alt="">
+    <img src="assets/img/cinta.png" alt="">
+  </div>
+</div>
+</section>
+
+<!-- HABILIDADES -->
+<section class="section-habilidades" id="skills">
+  <div class="container">
+    <h2 class="text-center titleTwo py-5">HABILIDADES</h2>
+    
+    <div class="row text-white g-4 mb-5">
+      <div class="col-md-6">
+        <div class="skill-card p-4">
+          <h3 class="h5 mb-4"><i class="bi bi-cpu-fill me-2"></i>Habilidades Duras</h3>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-code-slash me-2"></i> Desarrollo Web (HTML, CSS, JS)</li>
+            <li><i class="bi bi-layers-half me-2"></i> Frameworks (React, Angular)</li>
+            <li><i class="bi bi-grid-1x2-fill me-2"></i> CMS (WordPress)</li> 
+            <li><i class="bi bi-palette me-2"></i> Diseño de Interfaces (UI/UX)</li>
+            <li><i class="bi bi-database-fill me-2"></i> Bases de Datos</li>
+            <li><i class="bi bi-lightning-charge-fill me-2"></i> Metodologías Ágiles</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="skill-card p-4">
+          <h3 class="h5 mb-4"><i class="bi bi-person-hearts me-2"></i>Habilidades Blandas</h3>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-chat-dots-fill me-2"></i> Comunicación Asertiva</li>
+            <li><i class="bi bi-people-fill me-2"></i> Trabajo en Equipo</li>
+            <li><i class="bi bi-lightbulb-fill me-2"></i> Creatividad e Innovación</li>
+            <li><i class="bi bi-puzzle-fill me-2"></i> Resolución de Problemas</li>
+            <li><i class="bi bi-arrow-repeat me-2"></i> Adaptabilidad</li>
+            <li><i class="bi bi-clock-history me-2"></i> Gestión del Tiempo</li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="fondo-svg-habilidades">
+      <div class="astronauta-container"></div>
+    </div>
+
+    <p class="text-center mt-4 text-white lead fw-light px-3">
+      Este equilibrio me permite <strong>entregar proyectos de calidad</strong>, aportar valor al equipo y adaptarme a nuevos desafíos con eficiencia.
+    </p>
+  </div>
+</section>
+
+
+
+
+  <!-- PROYECTOS -->
+  <section class="section-proyectos"  id="portafolio">
+    <div class="container text-center">
+    <h2 class="text-center titleTree py-5">PORTAFOLIO</h2>
+    <div class="row pb-5">
+
+
+<div class="col-md-4 mb-4">
+  <div class="card">
+    <img 
+      src="assets/img/bimbo.jpg" 
+      class="card-img-top" 
+      alt="Proyecto Web">
+
+    <div class="card-body">
+      <h5>Sitio Promocional</h5>
+     <p>Proyecto para Bimbo rumbo al Mundial 2026, enfocado en arquitectura, UX/UI y desarrollo Front-End.</p>
+
+      <a 
+        href="#" 
+        class="btn btn-outline-info btn-sm mt-2 abrir-modal"
+        data-bs-toggle="modal"
+        data-bs-target="#modalWeb"
+        data-url="https://myma-promos.com/promos/bimbo-abrazo-de-gol/home"  
+        data-title="Abrazo de gol Bimbo"
+      >
+        Ver proyecto →
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4">
+  <div class="card">
+    <img 
+      src="assets/img/LX.jpg"  
+      class="card-img-top" 
+      alt="Proyecto Web">
+    <div class="card-body">
+      <h5>Landing Page Super Bowl LX 2026</h5>
+      <p>Diseño bajo licencia NFL con enfoque en UX/UI y desarrollo Front-End, optimizado para el registro de usuarios.</p>
+      <a 
+        href="#"
+        class="btn btn-outline-info btn-sm mt-2"
+        data-bs-toggle="modal"
+        data-bs-target="#modalWeb"
+        data-url="https://littlecaesarsnfl.com.mx/home"
+        data-title="Super Bowl LX 2026"
+      >
+        Ver proyecto →
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4">
+  <div class="card">
+    <img 
+      src="assets/img/lc.jpg"  
+      class="card-img-top" 
+      alt="Proyecto Web">
+    <div class="card-body">
+    <h5>Landing para Micrositios Promocionales</h5>
+    <p>Landing page con diseño moderno y animaciones, enfocada en centralizar las promociones anuales de Little Caesars.</p>
+    <a 
+      href="#"
+      class="btn btn-outline-info btn-sm mt-2"
+      data-bs-toggle="modal"
+      data-bs-target="#modalWeb"
+      data-url="https://littlec.com.mx/"
+      data-title="Little Caesars"
+    >
+      Ver proyecto →
+    </a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4">
+  <div class="card">
+    <img 
+      src="assets/img/marvel.jpg"  
+      class="card-img-top" 
+      alt="Proyecto Web">
+    <div class="card-body bg-light">
+      <h5>Artes Para Medios Digitales</h5>
+      <p>Licencia Disney / Artes para redes sociales / Branding y ventas</p>
+      <a 
+        href="#"
+        class="btn btn-outline-info btn-sm mt-2"
+        data-bs-toggle="modal"
+        data-bs-target="#modalGaleria"
+        data-images="assets/img/marvel1.png,assets/img/marvel3.png,assets/img/marvel2.png"
+      >
+        Ver proyecto →
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4">
+  <div class="card">
+    <img 
+      src="assets/img/disney.jpg" 
+      class="card-img-top" 
+      alt="Proyecto Web">
+    <div class="card-body bg-light">
+      <h5>Artes para Medios Digitales</h5>
+      <p>Licencia Disney / Artes para redes sociales / Branding y ventas</p>
+      <a 
+        href="#"
+        class="btn btn-outline-info btn-sm mt-2"
+        data-bs-toggle="modal"
+        data-bs-target="#modalGaleria"
+        data-images="assets/img/disney1.png,assets/img/disney3.png,assets/img/disney2.png"
+      >
+        Ver proyecto →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="col-md-4 mb-4">
+  <div class="card">
+    <img 
+      src="assets/img/bayer.jpg" 
+      class="card-img-top" 
+      alt="Proyecto Web">
+    <div class="card-body">
+      <h5>Micrositios Para Bayer</h5>
+      <p>Difusión anual de productos Bayer con incentivos, mediante micrositios y videojuegos interactivos digitales.</p>
+      <a 
+        href="#"
+        class="btn btn-outline-info btn-sm mt-2"
+        data-bs-toggle="modal"
+        data-bs-target="#modalWeb"
+        data-url="https://solobienestar.com/home"
+        data-title="Bayer Micrositios"
+      >
+        Ver proyecto →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+<!-- CONTACTO -->
+
+<!-- CONTACTO -->
+<section class="contact section" id="contacto">
+  <div class="container">
+
+    <h2 class="titleTwo text-center py-5">Contacto</h2>
+
+    <div class="row justify-content-center pb-5">
+      <div class="col-lg-6">
+
+        <form class="p-4 shadow glass-card">
+
+          <!-- Nombre -->
+          <div class="mb-3">
+            <label class="form-label text-white">Nombre</label>
+            <input type="text" name="nombre" class="form-control" placeholder="Tu nombre" required>
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label class="form-label text-white">Correo</label>
+            <input type="email" name="email" class="form-control" placeholder="tu@email.com" required>
+          </div>
+
+          <!-- Mensaje -->
+          <div class="mb-3">
+            <label class="form-label text-white">Mensaje</label>
+            <textarea name="mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+          </div>
+
+          <!-- Botón -->
+          <div class="d-grid">
+            <button type="submit" class="btn btn-cyan">
+              Enviar mensaje
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer-modern">
+
+  <!-- FRASE -->
+  <p class="footer-phrase">
+    CONSTRUYENDO EXPERIENCIAS DIGITALES QUE CONECTAN IDEAS CON PERSONAS.
+  </p>
+
+  <!-- REDES -->
+  <div class="footer-social">
+    <a href="https://github.com/erm-ng" target="_blank"><i class="bi bi-github"></i></a>
+    <a href="https://codepen.io/quike-rm" target="_blank"><i class="bi bi-code-slash"></i></a>
+    <a href="https://www.behance.net/EnriqueRM" target="_blank"><i class="bi bi-behance"></i></a>
+    <a href="https://www.instagram.com/7quike/" target="_blank"><i class="bi bi-instagram"></i></a>
+    <a href="https://mx.linkedin.com/in/enrique-rodr%C3%ADguez-macedo-67111654" target="_blank"><i class="bi bi-linkedin"></i></a>
+  </div>
+
+  <!-- INFO -->
+  <p class="footer-copy">© 2026 Enrique RM</p>
+
+  <p class="footer-legal">
+    Este sitio utiliza cookies para mejorar tu experiencia, analizar tráfico y personalizar contenido.
+    <a href="#">Más información</a>
+  </p>
+
+</footer>
+
+
+<!-- MODAL - PORTAFOLIO -->
+ <!-- MODAL - SITIOS -->
+<div class="modal fade" id="modalWeb" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark">
+
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-info">Proyecto</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body p-0">
+        <iframe id="iframeWeb" src="" width="100%" height="600px" style="border:none;"></iframe>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODAL - IMG -->
+<div class="modal fade" id="modalGaleria" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark">
+
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-info">Galería</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center" id="galeriaContenido">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="main.js"></script>
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+  emailjs.init("ns41-5nQ0AiTJyvwF");
+})();
+
+document.querySelector("form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.send("service_nrfc83k", "template_uobh8wc", {
+    name: this.nombre.value,
+    email: this.email.value,
+    message: this.mensaje.value
+  })
+  .then(() => {
+    alert("Mensaje enviado correctamente ✅ 🚀");
+    this.reset();
+  })
+  .catch((error) => {
+    console.log(error); // 👈 MUY IMPORTANTE
+    alert("Error al enviar");
+  });
+});
+</script>
+
+</body>
+</html>
